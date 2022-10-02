@@ -1,0 +1,288 @@
+/* 
+  ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │                                                              BELLOW 1344PX (FOR SMALLER DESKTOP)                                                │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+ */
+
+@media screen and (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 
+  ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │                                                              BELLOW 1200px (FOR TABLET)                                                │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+ */
+
+@media screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .main-nav-list {
+    column-gap: 3.2rem;
+  }
+
+  .testimonial-container {
+    padding: 9.8rem 3.2rem;
+  }
+}
+/* 
+  ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │                                                                BREAKPOINT 644PX FOR TABLET                                              │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+ */
+@media screen and (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    column-gap: 6.4rem;
+  }
+
+  .hero-text-box {
+    text-align: center;
+  }
+
+  .hero-image-box {
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 60%;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal-content {
+    padding: 2.4em 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-form {
+    margin-top: 1.2rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 100;
+  }
+
+  .main-nav {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    transform: translateX(100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: translateX(0);
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    row-gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+}
+/* 
+  ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │                                                                BREAKPOINT 704PX FOR TABLET                                              │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+ */
+
+@media screen and (max-width: 44em) {
+  .grid-cols-3,
+  .grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo-column,
+  .address-column {
+    grid-column: span 3;
+  }
+
+  .nav-column {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+}
+
+/* 
+  ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │                                                                   BELLOW 544PX                                           │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+ */
+@media screen and (max-width: 34em) {
+  .GRID {
+    row-gap: 4.8rem;
+  }
+
+  .grid-cols-2,
+  .grid-cols-3,
+  .grid-cols-4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .hero-image {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:last-child {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-image-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+}
